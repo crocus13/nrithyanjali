@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+          body{
+               background-color: bisque;
+               overflow: hidden;
+          }
+
+          img {float:right;}
+
+.container table {
+
+  border-collapse: collapse;   
+  border: 1px bisque;
+  width: 100%;}
+.container td {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.container{
+clear: both;
+
+}
+.label
+{float:left;
+width:150px;
+}
+
+.field{float:left;
+
+}
+</style>
+
+       
+</head>
+
+<body>
+
+     
+          
+
+     <h1>Register Here:</h1>
+     <img src="images/classical.jpg"alt="dancer">
+              
+
+
+
+    <div class="container">
+
+    <form action="registration.php" method="post">
+       
+<table>
+     <tr>
+   <td>
+        <div class="label"><label for="fname">First Name:</label></div>
+        <div class="field"><input type="text"name="fname"><?php echo$_POST["fname"];?></div></td>
+     </tr>
+
+   <tr>
+        <td> 
+             <div class="label"><label for="lname"> Last Name:</label></div>
+             <div class="field"><input type="text"name="lname"><?php echo$_POST["lname"];?></div></td>
+   </tr>
+
+  <tr>
+    <td>
+     <div class="label"><label for="date">DOB:</label></div>
+     <div class="field"><input type="date"name="dob"><?php echo$_POST["dob"];?></div></td>
+  </tr>
+
+<tr>
+    <td>
+         <div class="label"><label for="contactno"> Contact Number:</label></div>
+         <div class="field"><input type="text"name="contactno"><?php echo$_POST["contactno"];?></div></td>
+</tr>
+
+  <tr> 
+       <td>
+            <div class="label"><label for="email"> Email:</label></div>
+            <div class="field"><input type="text"name="email"><?php echo$_POST["email"];?></div></td>
+     </tr>
+     <tr>
+          <td><input type="submit" value ="Submit">
+          </td>
+     </tr>
+    
+    </table>
+    
+     
+</form>
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
