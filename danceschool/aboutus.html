@@ -1,75 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/topmenu.css">
 
 <style> 
 body{
-  background-color: black;
+  background-color:burlywood;
   margin-top: 70px;
-  overflow: hidden;
+ /* overflow: hidden;*/
 
 }
-#guru{
-  /*background-image: url(images/IMG_4176.jpg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  padding: 15px;*/
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:goldenrod;
-    background-color:black;
-    background-size: contain;
-    padding: 100px 60px;
 
-	font-size:25px;
-    /*background-image: url("images/IMG_4176.jpg");
-    
-    background-size: 500px 800px;    */
-
-    background-repeat: no-repeat;
-
-}
-img{
+  
+/*img{
     float:right;
-margin-top:50px;
-    image-rendering: crisp-edges ;
-}
+margin-top:100px;
+   image-rendering: crisp-edges ;
+   padding:100px 70px;
+}*/
 p{
     text-align:left;
-    text-indent:50px;
-    word-spacing: 14px;
-    
+    text-indent:40px;
+    word-spacing: 1px;
 }
+
+* {
+  box-sizing: border-box;
+}
+.headup {
+  padding: 100px;
+  font-size: 25px;
+  text-align: center;
+  background-color: burlywood;
+  font-style: italic;
+  margin-bottom:0px;
+}
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+img{
+  background-color:blanchedalmond;
+  width: 400px;
+  padding: 5px;
+  height:500px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:burlywood;
+   padding: 0px 100px;
+   margin-top: 0;
+   width:600px;
+   height: 800px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3{
+  line-height: 4em;
+}
+
+
 </style>
 </head>
 <body>
   <header>
+      
+  <nav>
+    <h1>Nrityanjali School Of Dance</h1>
 
-  
-    <div class="topmenu">
-        <h1>Nrityanjali Dance School</h1>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="registration.html">Enroll</a>
+    <ul class = "nav">
 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li> <a href="registration.html">Enroll</a></li>
+      
+    
+        <li><a href="classes.html" aria-haspopup="true">Classes</a>
+
+               <ul class="dropdown"aria-label="submenu">
+               <li><a href="schedule.html">Schedule</a></li>
+               <li><a href="policies.html">Policies</a></li>
+               <li><a href="online.html">Online</a></li> </ul>
+
+        </li>
         
 
 
-     </div>
+
+
+       <li><a href="events.html">Events</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="contact.html">Contact</a></li>
+
+
+       </ul>
+        
+ </nav>
 
 </header>
+<!--<h2 font-style="italic";font-size="larger";text-align="center"margin-top="550px";>Namaste!</h2>-->
+<div class="headup">
+<h1>Namaste!</h1>
 
-
-<img src="images/IMG_4176.jpg">
-
-<div id="guru">
-    
-  <h2 style="font-style: italic;font-size:larger;text-align:center ;">Namaste!</h2>
-  <h2 style="float:center;font-size:xx-large;">Welcome to Nrityanjali!</h2>
-  <p>Nrityanjali was started in June 2011 by Ms.Sithara Judish a PG in Biotechnology and a PG Diploma in Patent Law from NALSAR,Hyderabad.Her school comprises students of varying ages and levels.Currently, she is focusing on the instruction of Bharatnatyam and Mohiniyattam.</p>
-
-  <p>Sithara is an accomplished dancer trained for more than 12 years in Bharatanatyam and Mohiniyattam from gurus of Kalamandalam.She was adjudged Kalathilakam of Kozhikode District,Kerala. She represented her University for National Integration Youth Festival at Allahabad.Gave performances associated with Kerala government functions in New Delhi representing the state.Her/her group's performances were aired in TV Channels like Doordarshan and Asianet.She is currently pursuing her advanced training in Bharatanatyam at Padmasree,Dr Ananda Shankar Jayant's,Shankarananda Kalakshetra.</p>
+  
 </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="width:100%">Welcome to Sithara's Nrityanjali!</h2>
+      <h3>About Us:</h5>
+     <!-- <div class="img" style="height:200px;">
+      </div>-->
+       <p>Nrityanjali was started in the year 2011 to impart training to the next generation in divine dance form of Bharatanatyam.</p>
+       <h3>Our Mission:</h2>
+       <p>To holistically develop next generation of performing artists,support Indian culture &tradition via dance and music.</p>
+    </div>
+ </div>
+ <div class="rightcolumn">
+   <div class="card">
+<img src="img/IMG_4176.jpg">  </div>
+</div>
+
+
+
+
+
+
+
+<!--<img src="img/IMG_4176.jpg"alt="guru">-->
+
+    
+  
+  <!--<h2 style="float:center;font-size:xx-large;">Welcome to Nrityanjali!</h2>
+  
+  <p>About Us:Nrityanjali was started in the year 2011 to impart training to the next generation in divine dance form of Bharatanatyam.</p>
+  
+
+    <p>Our Mission:To holistically develop next generation of performing artists,support Indian culture &tradition via dance and music.</p>
+    </article>-->
+  
+
 
 </body>
 </html>

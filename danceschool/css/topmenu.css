@@ -1,33 +1,93 @@
 
- .topmenu{
-    /*overflow: hidden;*/
-    background-color:darkolivegreen;
-    position: fixed;
-    top:0;
-    left:0;
+nav{
+    font-family: sans-serif;
     width:100%;
     margin-top: 0px;
-    
-   }
-     .topmenu a{
-         float:left;
-         display: block;
-         text-align: center;
-         padding: 15px 16px;
-         text-decoration: none;
-         color:blanchedalmond;
-         font-size:20px ;
-         
-   }
-     .topmenu a:hover{
-         background:whitesmoke;
-         color:black;
+    background-color: darkolivegreen;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0;
      }
-     h1{text-align:left;
+     
+  a {
+      text-decoration: none; 
+        padding:20px 60px;
+    }
+
+ul{
+   background:darkolivegreen;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+}
+
+li{
+    color:blanchedalmond;
+   background:darkolivegreen;
+    display: block;
+    float: left;
+   padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+    
+}
+li a {
+    color:blanchedalmond;
+}
+li:hover,li:focus-within
+{
+    cursor:pointer;
+    background: black;
+}
+li:focus-within a {outline: none;}
+
+ul li ul{
+  /*  background: maroon;*/
+    visibility: hidden;
+    opacity: 0;
+    min-width: width 5em;
+    position :absolute;
+    transition: all 0.5s ease;
+    margin-top:1rem;
+    left:0;
+    display: none;
+    margin-right: 1px;
+    margin-left: 1px;
+
+}
+ul li:hover > ul,
+ul li:focus-within > ul,ul li ul:hover,ul li ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li{
+    clear: both;
+    width:100%;
+}
+
+
+
+
+     
+  h1{text-align:left;
         margin-left: 400px;
         margin-bottom:0px;
 
         color: blanchedalmond;
         font-family: cursive;
-        font-size:50px;
+        font-size: 40px;
+        
     }
+   /* h2{text-align:left;
+        margin-left: 500px;
+        margin-bottom:0px;
+
+        color: blanchedalmond;
+        font-family: cursive;
+        font-size:30px;}*/
