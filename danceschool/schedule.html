@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
   <link rel="stylesheet" href="css/topmenu.css">
+  <link rel="stylesheet" href="css/responsive.css">
 <style>
     body{
-            background-image: url("img/a1-17.jpg");
+            background-color: steelblue;
             background-repeat: no-repeat;
             background-size:cover;
 
@@ -24,11 +25,12 @@
           table{
               margin-right: auto;
               margin-left:200px;
-              margin-top:50px;
+              margin-top:0px;
+              margin-bottom: 40px;
               color:wheat;
           }
           h2{
-            margin-top:180px;
+            margin-top:40px;
             margin-left: 300px;
               line-height: 100px;
               color:wheat;
@@ -38,40 +40,43 @@
 </head>
 
 <body>
-    <header>
-      
-        <nav>
-          <h1>Nrityanjali School Of Dance</h1>
-      
-          <ul class = "nav">
-      
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutus.html">About Us</a></li>
-              <li> <a href="registration.html">Enroll</a></li>
-            
-          
-              <li><a href="classes.html" aria-haspopup="true">Classes</a>
-      
-                     <ul class="dropdown"aria-label="submenu">
-                     <li><a href="schedule.html">Schedule</a></li>
-                     <li><a href="policies.html">Policies</a></li>
-                     <li><a href="online.html">Online</a></li> </ul>
-      
+  <h1>Nrityanjali School Of Dance</h1>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo"><img src="images/dance-logo.jpg"></div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links"> 
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+
+        
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="registration.html">Enroll</a></li>
+        
+          <li class="classes"><a href="classes.html">Classes</a>
+        
+            <ul class="dropdown"> 
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="policies.html">Policies</a></li>
+              <li><a href="online.html">Online</a></li>
+            </ul>
+         
               </li>
-              
-      
-      
-      
-      
-             <li><a href="events.html">Events</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
-             <li><a href="contact.html">Contact</a></li>
-      
-      
-             </ul>
-              
-       </nav>
-</header>    
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+        </div>
+        
+        </ul>
+    </nav>
+        
     <h2>Class Schedule:</h2>
     <table>
   
@@ -106,4 +111,8 @@
   </tr>
 
     </table>
+    <div class ="footer">
+      <footer>Designed and Developed by <span>VNS</span></footer>
+</div>
+       
 </body>

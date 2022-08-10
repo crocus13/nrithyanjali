@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
   <link rel="stylesheet" href="css/topmenu.css">
+  <link rel="stylesheet" href="css/responsive.css">
         <style>
        body{
            background-color:gainsboro;
+           width:100%;
+           height:100vh;
        }
       address{
           margin-left: 60px;
@@ -25,47 +28,47 @@ h3{
 }
 iframe{
    margin-left: 5px;
-    float:left;
 }
         </style>
     </head>
 
 <body>
-    <header>
+    <h1>Nrityanjali School Of Dance</h1>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo"><img src="images/dance-logo.jpg"></div>
       
-        <nav>
-          <h1>Nrityanjali School Of Dance</h1>
-      
-          <ul class = "nav">
-      
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutus.html">About Us</a></li>
-              <li> <a href="registration.html">Enroll</a></li>
-            
+          <!-- NAVIGATION MENU -->
+          <ul class="nav-links"> 
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+
           
-              <li><a href="classes.html" aria-haspopup="true">Classes</a>
-      
-                     <ul class="dropdown"aria-label="submenu">
-                     <li><a href="schedule.html">Schedule</a></li>
-                     <li><a href="policies.html">Policies</a></li>
-                     <li><a href="online.html">Online</a></li> </ul>
-      
-              </li>
-              
-      
-      
-      
-      
-             <li><a href="events.html">Events</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
-             <li><a href="contact.html">Contact</a></li>
-      
-      
-             </ul>
-              
-       </nav>
-      
-      </header>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="registration.html">Enroll</a></li>
+          
+            <li class="classes"><a href="classes.html">Classes</a>
+          
+              <ul class="dropdown"> 
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="online.html">Online</a></li>
+              </ul>
+           
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+          </div>
+          
+          </ul>
+      </nav>
     <h2>Contact Us:</h2>
 
 <address>
@@ -80,6 +83,10 @@ iframe{
 <h3>Location:</h3>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.228801633244!2d78.43039571403983!3d17.44875970562683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e07d71fe63%3A0xcd32940132e3c006!2sRevathi%20Residency!5e0!3m2!1sen!2sus!4v1593054972269!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
+<div class ="footer">
+    <footer>Designed and Developed by <span>VNS</span></footer>
+</div>
+     
 </body>
 
     </html>
