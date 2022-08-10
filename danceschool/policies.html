@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
   <link rel="stylesheet" href="css/topmenu.css">
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+
 <style>
 
     
     body{
         width:100%;
         background-color:white;
-        overflow:scroll;
+        /* overflow:scroll; */
        /* background-image: url("img/bharatanatyam-4662490_1280.jpg");
         background-repeat:repeat-y;*/
     }
@@ -25,7 +28,7 @@
     margin-right: auto;
 }*/
 .container table{
-    margin-top:50px;
+    margin-top:20px;
     margin-left: 40px;
     line-height: 1.5em;
 }
@@ -50,7 +53,7 @@ div.container ul {
     margin-right: -50%;
     transform: translate(-50%, -50%) }*/
     div.container1{
-        margin-top:50px;
+        margin-top:20px;
         left:100%;
         margin-left: 40px;
 
@@ -64,7 +67,7 @@ div.container ul {
 
 
     h2{
-        margin-top: 180px;
+        margin-top: 28px;
         color:black;
         text-decoration: underline;
         text-align: center;
@@ -84,41 +87,45 @@ div.container ul {
 
 
         <body>  
-            <header>
-      
-                <nav>
-                  <h1>Nrityanjali School Of Dance</h1>
-              
-                  <ul class = "nav">
-              
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="aboutus.html">About Us</a></li>
-                      <li> <a href="registration.html">Enroll</a></li>
-                    
-                  
-                      <li><a href="classes.html" aria-haspopup="true">Classes</a>
-              
-                             <ul class="dropdown"aria-label="submenu">
-                             <li><a href="schedule.html">Schedule</a></li>
-                             <li><a href="policies.html">Policies</a></li>
-                             <li><a href="online.html">Online</a></li> </ul>
-              
-                      </li>
-                      
-              
-              
-              
-              
-                     <li><a href="events.html">Events</a></li>
-                     <li><a href="gallery.html">Gallery</a></li>
-                     <li><a href="contact.html">Contact</a></li>
-              
-              
-                     </ul>
-                      
-               </nav>
-              
-              </header>
+            <h1>Nrityanjali School Of Dance</h1>
+
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><img src="images/dance-logo.jpg"></div>
+         <!-- NAVIGATION MENU -->
+             <ul class="nav-links"> 
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="dance">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+
+            
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="registration.html">Enroll</a></li>
+            
+                                <li class="classes"><a href="classes.html">Classes</a>
+            
+                                 <ul class="dropdown"> 
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="policies.html">Policies</a></li>
+                                <li><a href="online.html">Online</a></li>
+                                </ul>
+             
+                                </li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                                </div>
+            
+                            </ul>
+                    </nav>
+            
+
+           
             <h2> School Policies</h2>
            <!-- <IMG class="displayed" src="img/bharatanatyam-4662490_1280.jpg"-->
           <img src="img/bharatanatyam-4662490_1280.jpg">

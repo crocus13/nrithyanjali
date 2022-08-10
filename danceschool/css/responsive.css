@@ -3,8 +3,8 @@
 input[type=checkbox]{
     display: none;
    } 
-   /*HAMBURGER MENU*/
-   .hamburger {
+   /*DANCE MENU*/
+   .dance {
     display: none;
     font-size: 24px;
     user-select: none;
@@ -14,7 +14,7 @@ input[type=checkbox]{
    .menu { 
     display:none;
     position: absolute;
-    background-color:darkolivegreen;
+    background-color:var(--bg-color);
     right: 0;
     left: 0;
     text-align: center;
@@ -31,7 +31,7 @@ input[type=checkbox]{
    input[type=checkbox]:checked ~ .menu{
     display: block;
    }
-   .hamburger {
+   .dance{
     display: block;
    }
    .dropdown {

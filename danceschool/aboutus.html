@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/topmenu.css">
   <link rel="stylesheet" href="css/responsive.css"/>  
+  <link rel="stylesheet" href="css/variables.css"/>
+
 
 <style> 
 body{
-  background-color:black;
+  background-color:var(--bg-color);
   margin-top: 0px;
 }
 h2{
-color:white;
-background-color: black;
+color:var(--primary-color);
+background-color: var(--bg-color);
 font-size: 30px;
 font-weight:10px;
 text-align: center;
@@ -34,13 +36,17 @@ text-align: center;
 }
 .left-section h1{
     margin:0;
-    color:white;
+    color:var(--primary-color);
     font-size: 25px;
 }
-
+.left-section h3{
+  margin: 30px 5px 10px 0px;
+  color:var(--primary-color);
+  font-family: sans-serif;
+}
 .left-section p{
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color:rgba(255,255,255,0.884);
     margin-top:18px;
     text-align:left;
@@ -54,7 +60,7 @@ text-align: center;
 }
 /* Fake image */
 .right-section img {
-  background-color:black;
+  background-color:var(--bg-color);
   width: 300px;
   padding: 0 10px;
   margin:0px 3px;
@@ -70,12 +76,12 @@ text-align: center;
     <nav class="navbar">
       <!-- LOGO -->
       <div class="logo"><img src="images/dance-logo.jpg"></div>
-      
+
           <!-- NAVIGATION MENU -->
           <ul class="nav-links"> 
             <!-- USING CHECKBOX HACK -->
             <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <label for="checkbox_toggle" class="dance">&#9776;</label>
 
           <!-- NAVIGATION MENUS -->
           <div class="menu">
@@ -120,7 +126,8 @@ text-align: center;
       <h2>Welcome to  Nrityanjali!</h2>
       <h3>About Us:</h3>
      
-       <p>Nrityanjali was started in the year 2011 to impart training to the next generation in divine dance form of Bharatanatyam.</p>
+       <p>Nrityanjali was started in the year 2011 to impart training to the next generation in divine dance form of Bharatanatyam.
+          Offering a comprehensive dance curriculum for students ages five and above, our institute is committed to nurturing their creativity while instilling humanitarian thoughts in them</p>
        <h3>Our Mission:</h3>
        <p>To holistically develop next generation of performing artists,support Indian culture &tradition via dance and music.</p>
     </div>
